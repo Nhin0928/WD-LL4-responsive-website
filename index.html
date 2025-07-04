@@ -1,16 +1,65 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>LiveLab 4 Demo</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoTravel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-  Hello world
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">EcoTravel</h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Explore the world sustainably</h2>
+      <p>Discover eco-friendly destinations and travel responsibly.</p>
+      <a href="#tours" class="btn">View Tours</a>
+    </div>
+  </section>
+
+  <section id="destinations" class="destinations">
+    <h3>Top Eco Destinations</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="img/AmazonRainforest.png" alt="Rainforest" />
+        <h4>Amazon Rainforest</h4>
+      </div>
+      <div class="card">
+        <img src="img/Himalayas.png" alt="Mountain" />
+        <h4>Himalayas</h4>
+      </div>
+      <div class="card">
+        <img src="img/PacificIslands.png" alt="Beach" />
+        <h4>Pacific Islands</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Get in Touch</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EcoTravel. All rights reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
-
 </html>

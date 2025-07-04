@@ -1,0 +1,233 @@
+/* Base styles */
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f9f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #a8dadc;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #1d3557;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1d3557;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #457b9d;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #d0f0fd;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #1d3557;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+  color: #457b9d;
+}
+
+.btn {
+  background-color: #1d3557;
+  color: #f4f9f4;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #457b9d;
+}
+
+/* Destinations Section */
+.destinations {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.destinations h3 {
+  text-align: center;
+  color: #1d3557;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(29, 53, 87, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h4 {
+  margin: 15px 0;
+  color: #1d3557;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #a8dadc;
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(29, 53, 87, 0.15);
+}
+
+.contact h3 {
+  text-align: center;
+  color: #1d3557;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  resize: vertical;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.contact textarea {
+  min-height: 100px;
+}
+
+.contact button {
+  background-color: #1d3557;
+  color: #f4f9f4;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #457b9d;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 20px;
+  background-color: #1d3557;
+  color: #f4f9f4;
+  font-size: 0.9em;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Grid */
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  header {
+    padding: 20px 40px;
+  }
+
+  .nav-links {
+    gap: 25px;
+  }
+
+  /* Destinations grid becomes 3 columns */
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Contact form max width */
+  .contact {
+    max-width: 700px;
+  }
+
+  /* Hero section text bigger */
+  .hero-content h2 {
+    font-size: 2.8em;
+  }
+
+  .hero-content p {
+    font-size: 1.4em;
+  }
+
+  /* Button larger */
+  .btn, .contact button {
+    padding: 15px 40px;
+    font-size: 1.2em;
+  }
+}
